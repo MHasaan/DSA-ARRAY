@@ -21,11 +21,11 @@ abstract class List
 {
     abstract public void print();
     abstract public int search(int element);
-    public void addToStart(){}
-    public void addToEnd(){}
+    public void addToStart(int element){}
+    public void addToEnd(int element){}
     public void addToLocation(){}
     public void delFromEnd(){}
-    public void UpdateArray(){}
+    public void UpdateArray(int element , int location){}
     public void delFromStart(){}
     public void delFromLocation(){}
     public void ArraySort(){}
@@ -94,7 +94,7 @@ class Array extends List{
 
 
     @Override
-    public void sortArray(){                // Using bubble Sorting
+    public void ArraySort(){                // Using bubble Sorting
         int size = PassedArray.length;
         // loop to access each array element
         for (int i = 0; i < (size-1); i++) {
